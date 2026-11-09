@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palet Dark theme sederhana yang selaras -->
+    <color name="color_primary_dark_059">#CE93D8</color>
+    <color name="color_primary_059">#B388FF</color>
+    <color name="color_primary_soft_059">#37244E</color>
+
+    <color name="color_background_059">#121212</color>
+    <color name="color_panel_gray_059">#1E1E1E</color>
+    <color name="color_field_fill_059">#252525</color>
+    <color name="color_surface_059">#1E1E1E</color>
+
+    <color name="color_text_primary_059">#F5F5F5</color>
+    <color name="color_text_secondary_059">#A0A0A0</color>
+
+    <color name="color_divider_purple_059">#4A3764</color>
+    <color name="color_error_059">#EF9A9A</color>
+    <color name="color_error_soft_059">#3E2726</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_white_70">#B3FFFFFF</color>
+</resources>

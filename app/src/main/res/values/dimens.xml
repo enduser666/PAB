@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Padding layar -->
+    <dimen name="padding_screen_059">20dp</dimen>
+
+    <!-- Spacing kelipatan 8dp -->
+    <dimen name="spacing_4_059">4dp</dimen>
+    <dimen name="spacing_6_059">6dp</dimen>
+    <dimen name="spacing_8_059">8dp</dimen>
+    <dimen name="spacing_12_059">12dp</dimen>
+    <dimen name="spacing_16_059">16dp</dimen>
+    <dimen name="spacing_20_059">20dp</dimen>
+    <dimen name="spacing_24_059">24dp</dimen>
+    <dimen name="spacing_32_059">32dp</dimen>
+    <dimen name="spacing_40_059">40dp</dimen>
+    <dimen name="spacing_48_059">48dp</dimen>
+
+    <!-- Corner Radii -->
+    <dimen name="radius_panel_059">20dp</dimen>
+    <dimen name="radius_card_059">16dp</dimen>
+    <dimen name="radius_field_059">12dp</dimen>
+    <dimen name="radius_button_059">12dp</dimen>
+    <dimen name="radius_pill_059">100dp</dimen>
+    <dimen name="radius_search_059">100dp</dimen>
+    <dimen name="radius_avatar_059">100dp</dimen>
+    <dimen name="radius_item_thumb_059">16dp</dimen>
+
+    <!-- Ukuran dimensi komponen -->
+    <dimen name="size_item_thumb_059">72dp</dimen>
+    <dimen name="size_avatar_059">40dp</dimen>
+    <dimen name="height_photo_box_059">160dp</dimen>
+    <dimen name="height_button_059">52dp</dimen>
+    <dimen name="height_search_059">48dp</dimen>
+    <dimen name="height_topbar_059">56dp</dimen>
+    <dimen name="stroke_divider_059">1dp</dimen>
+
+    <!-- Typography -->
+    <dimen name="text_display_059">28sp</dimen>
+    <dimen name="text_title_large_059">22sp</dimen>
+    <dimen name="text_title_059">16sp</dimen>
+    <dimen name="text_body_059">14sp</dimen>
+    <dimen name="text_label_059">12sp</dimen>
+    <dimen name="text_caption_059">11sp</dimen>
+</resources>

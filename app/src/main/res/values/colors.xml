@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palet tema "Inventor.io" -->
+    <color name="color_primary_dark_059">#4A148C</color>
+    <color name="color_primary_059">#7B2FE0</color>
+    <color name="color_primary_soft_059">#E3D5F7</color>
+
+    <color name="color_background_059">#FFFFFF</color>
+    <color name="color_panel_gray_059">#F2F2F2</color>
+    <color name="color_field_fill_059">#F2F2F2</color>
+    <color name="color_surface_059">#FFFFFF</color>
+
+    <color name="color_text_primary_059">#1C1B1F</color>
+    <color name="color_text_secondary_059">#6E6E73</color>
+
+    <color name="color_divider_purple_059">#D9C9F5</color>
+    <color name="color_error_059">#B3261E</color>
+    <color name="color_error_soft_059">#FCE8E6</color>
+
+    <!-- Statis / pembantu -->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_white_70">#B3FFFFFF</color>
+</resources>

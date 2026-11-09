@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_background_059"
+    android:padding="@dimen/padding_screen_059">
+
+    <!-- Handle drag bar -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:background="@drawable/bg_panel_gray_059"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/spacing_16_059" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/judul_filter"
+        android:textColor="@color/color_text_primary_059"
+        android:textSize="@dimen/text_title_large_059"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="@dimen/spacing_16_059" />
+
+    <!-- Kategori 1: Status Stok -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kategori_status_stok"
+        android:textColor="@color/color_text_secondary_059"
+        android:textSize="@dimen/text_label_059"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.06"
+        android:layout_marginBottom="@dimen/spacing_8_059" />
+
+    <RadioGroup
+        android:id="@+id/rgStatusStok059"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/spacing_16_059">
+
+        <RadioButton
+            android:id="@+id/rbStatusSemua059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_semua"
+            android:textColor="@color/color_text_primary_059"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbStatusTersedia059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chip_tersedia"
+            android:textColor="@color/color_text_primary_059" />
+
+        <RadioButton
+            android:id="@+id/rbStatusMenipis059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chip_menipis"
+            android:textColor="@color/color_text_primary_059" />
+
+        <RadioButton
+            android:id="@+id/rbStatusHabis059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chip_habis"
+            android:textColor="@color/color_text_primary_059" />
+    </RadioGroup>
+
+    <!-- Garis Pemisah -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_divider_059"
+        android:background="@color/color_divider_purple_059"
+        android:layout_marginBottom="@dimen/spacing_16_059" />
+
+    <!-- Kategori 2: Filter Kategori Barang (Chip) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kategori_filter_judul"
+        android:textColor="@color/color_text_secondary_059"
+        android:textSize="@dimen/text_label_059"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.06"
+        android:layout_marginBottom="@dimen/spacing_8_059" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="@dimen/spacing_16_059">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupKategori059"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipKategoriSemua059"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kategori_filter_semua"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:checked="true" />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <!-- Garis Pemisah -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_divider_059"
+        android:background="@color/color_divider_purple_059"
+        android:layout_marginBottom="@dimen/spacing_16_059" />
+
+    <!-- Kategori 3: Urutkan -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kategori_urutkan"
+        android:textColor="@color/color_text_secondary_059"
+        android:textSize="@dimen/text_label_059"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.06"
+        android:layout_marginBottom="@dimen/spacing_8_059" />
+
+    <RadioGroup
+        android:id="@+id/rgUrutkan059"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/spacing_24_059">
+
+        <RadioButton
+            android:id="@+id/rbSortNama059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sort_nama_asc"
+            android:textColor="@color/color_text_primary_059"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbSortStok059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sort_stok_asc"
+            android:textColor="@color/color_text_primary_059" />
+
+        <RadioButton
+            android:id="@+id/rbSortHarga059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sort_harga_desc"
+            android:textColor="@color/color_text_primary_059" />
+    </RadioGroup>
+
+    <!-- Tombol Aksi: Terapkan & Reset -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnResetFilter059"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_button_059"
+            android:layout_weight="1"
+            android:text="@string/btn_reset"
+            style="@style/Widget.Inventaris059.Button.Primary"
+            android:backgroundTint="@color/color_panel_gray_059"
+            android:textColor="@color/color_text_primary_059"
+            android:layout_marginEnd="@dimen/spacing_8_059" />
+
+        <Button
+            android:id="@+id/btnTerapkanFilter059"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_button_059"
+            android:layout_weight="1"
+            android:text="@string/btn_terapkan"
+            style="@style/Widget.Inventaris059.Button.Primary"
+            android:layout_marginStart="@dimen/spacing_8_059" />
+    </LinearLayout>
+
+</LinearLayout>

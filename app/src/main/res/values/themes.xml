@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Inventaris059" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Brand colors -->
+        <item name="colorPrimary">@color/color_primary_059</item>
+        <item name="colorPrimaryVariant">@color/color_primary_dark_059</item>
+        <item name="colorSecondary">@color/color_primary_059</item>
+        <item name="colorOnPrimary">@color/color_white</item>
+
+        <!-- Background & surface -->
+        <item name="android:colorBackground">@color/color_background_059</item>
+        <item name="colorSurface">@color/color_surface_059</item>
+
+        <!-- Text -->
+        <item name="android:textColorPrimary">@color/color_text_primary_059</item>
+        <item name="android:textColorSecondary">@color/color_text_secondary_059</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/color_error_059</item>
+    </style>
+
+    <!-- Layar Auth (Login/Register): background ungu tua penuh -->
+    <style name="Theme.Inventaris059.Auth" parent="Theme.Inventaris059">
+        <item name="android:colorBackground">@color/color_primary_dark_059</item>
+        <item name="android:windowBackground">@color/color_primary_dark_059</item>
+        <item name="android:statusBarColor">@color/color_primary_dark_059</item>
+        <item name="android:navigationBarColor">@color/color_primary_dark_059</item>
+    </style>
+</resources>

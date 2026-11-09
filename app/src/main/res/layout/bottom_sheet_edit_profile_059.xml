@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_background_059"
+    android:padding="@dimen/padding_screen_059">
+
+    <!-- Handle Bar -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:background="@drawable/bg_panel_gray_059"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/spacing_16_059" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/judul_ubah_profil"
+        android:textColor="@color/color_text_primary_059"
+        android:textSize="@dimen/text_title_large_059"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="@dimen/spacing_20_059" />
+
+    <!-- Label Username -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_username"
+        android:textColor="@color/color_text_primary_059"
+        android:textSize="@dimen/text_body_059"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="@dimen/spacing_8_059" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Inventaris059.Field"
+        android:layout_marginBottom="@dimen/spacing_20_059">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEditUsername059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_username"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/color_text_primary_059"
+            android:textSize="@dimen/text_body_059" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Label Password Baru -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_password"
+        android:textColor="@color/color_text_primary_059"
+        android:textSize="@dimen/text_body_059"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="@dimen/spacing_8_059" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Inventaris059.Field"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="@dimen/spacing_32_059">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEditPassword059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password_baru"
+            android:inputType="textPassword"
+            android:textColor="@color/color_text_primary_059"
+            android:textSize="@dimen/text_body_059" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tombol Simpan Profil -->
+    <Button
+        android:id="@+id/btnSimpanProfil059"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_button_059"
+        android:text="@string/btn_simpan"
+        style="@style/Widget.Inventaris059.Button.Primary" />
+
+</LinearLayout>

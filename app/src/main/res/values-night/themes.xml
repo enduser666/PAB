@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Inventaris059" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/color_primary_059</item>
+        <item name="colorPrimaryVariant">@color/color_primary_dark_059</item>
+        <item name="colorSecondary">@color/color_primary_059</item>
+        <item name="colorOnPrimary">@color/color_text_primary_059</item>
+        <item name="android:colorBackground">@color/color_background_059</item>
+        <item name="colorSurface">@color/color_surface_059</item>
+        <item name="android:textColorPrimary">@color/color_text_primary_059</item>
+        <item name="android:textColorSecondary">@color/color_text_secondary_059</item>
+        <item name="colorError">@color/color_error_059</item>
+    </style>
+
+    <style name="Theme.Inventaris059.Auth" parent="Theme.Inventaris059">
+        <item name="android:colorBackground">#2D1B40</item>
+        <item name="android:windowBackground">#2D1B40</item>
+        <item name="android:statusBarColor">#2D1B40</item>
+        <item name="android:navigationBarColor">#2D1B40</item>
+    </style>
+</resources>

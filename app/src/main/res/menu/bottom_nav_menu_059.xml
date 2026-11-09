@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_beranda_059"
+        android:icon="@drawable/ic_nav_home_059"
+        android:title="@string/nav_beranda" />
+    <item
+        android:id="@+id/nav_tambah_059"
+        android:icon="@drawable/ic_nav_add_059"
+        android:title="@string/nav_tambah" />
+    <item
+        android:id="@+id/nav_barang_059"
+        android:icon="@drawable/ic_nav_box_059"
+        android:title="@string/nav_barang" />
+    <item
+        android:id="@+id/nav_pengaturan_059"
+        android:icon="@drawable/ic_nav_settings_059"
+        android:title="@string/nav_pengaturan" />
+</menu>

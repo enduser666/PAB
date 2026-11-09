@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tombol Utama: full-width, ungu tua, tinggi 52dp, radius 12dp -->
+    <style name="Widget.Inventaris059.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/color_primary_dark_059</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_title_059</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="cornerRadius">@dimen/radius_button_059</item>
+        <item name="android:minHeight">@dimen/height_button_059</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <!-- Tombol Pill "+ Tambah Barang" di Layar Barang -->
+    <style name="Widget.Inventaris059.Button.PillAdd" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/color_primary_dark_059</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_body_059</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="cornerRadius">@dimen/radius_pill_059</item>
+        <item name="android:minHeight">@dimen/height_search_059</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingHorizontal">@dimen/spacing_16_059</item>
+    </style>
+
+    <!-- Tombol Putih pada Layar Auth -->
+    <style name="Widget.Inventaris059.Button.Auth" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/color_white</item>
+        <item name="android:textColor">@color/color_primary_dark_059</item>
+        <item name="android:textSize">@dimen/text_title_059</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="cornerRadius">@dimen/radius_button_059</item>
+        <item name="android:minHeight">@dimen/height_button_059</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <!-- Tombol Text Merah (Hapus) -->
+    <style name="Widget.Inventaris059.Button.DestructiveText" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/color_error_059</item>
+        <item name="android:textSize">@dimen/text_title_059</item>
+        <item name="rippleColor">@color/color_error_soft_059</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!-- Kartu Statistik 2x2 -->
+    <style name="Widget.Inventaris059.Card.Stat" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/color_surface_059</item>
+        <item name="cardCornerRadius">@dimen/radius_card_059</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">@dimen/stroke_divider_059</item>
+        <item name="strokeColor">@color/color_divider_purple_059</item>
+    </style>
+
+    <!-- Field Fill #F2F2F2 rounded 12dp tanpa outline -->
+    <style name="Widget.Inventaris059.Field" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/color_field_fill_059</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_field_059</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_field_059</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_field_059</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_field_059</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxStrokeColor">@color/color_primary_059</item>
+        <item name="hintEnabled">false</item>
+    </style>
+
+    <!-- Field pada Layar Auth (Putih) -->
+    <style name="Widget.Inventaris059.Field.Auth" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/color_white</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_field_059</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_field_059</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_field_059</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_field_059</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="hintEnabled">false</item>
+    </style>
+
+    <!-- TextAppearance untuk Auth Screen -->
+    <style name="TextAppearance.Inventaris059.Auth.Title" parent="">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.Inventaris059.Auth.Label" parent="">
+        <item name="android:textColor">@color/color_white_70</item>
+        <item name="android:textSize">@dimen/text_body_059</item>
+    </style>
+
+    <!-- Bottom Navigation Bar Style -->
+    <style name="Widget.Inventaris059.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/color_white</item>
+        <item name="itemIconTint">@color/bottom_nav_color_059</item>
+        <item name="itemTextColor">@color/bottom_nav_color_059</item>
+        <item name="itemRippleColor">@color/color_primary_soft_059</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+</resources>

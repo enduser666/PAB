@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_background_059">
+
+    <!-- Baris Atas: Tombol Cari (Toggle) | + Tambah Barang Pill | Filter Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/padding_screen_059"
+        android:paddingTop="@dimen/spacing_16_059"
+        android:paddingBottom="@dimen/spacing_8_059">
+
+        <!-- Tombol Toggle Cari -->
+        <ImageButton
+            android:id="@+id/btnToggleSearch059"
+            android:layout_width="@dimen/height_search_059"
+            android:layout_height="@dimen/height_search_059"
+            android:background="@drawable/bg_panel_gray_059"
+            android:src="@drawable/ic_search_059"
+            android:contentDescription="@string/hint_search"
+            android:layout_marginEnd="@dimen/spacing_8_059" />
+
+        <!-- Tombol "+ Tambah Barang" Pill -->
+        <Button
+            android:id="@+id/btnPillTambah059"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_search_059"
+            android:layout_weight="1"
+            android:text="@string/btn_tambah_barang"
+            style="@style/Widget.Inventaris059.Button.PillAdd"
+            android:layout_marginEnd="@dimen/spacing_8_059" />
+
+        <!-- Tombol "Filter" Putih dgn icon corong -->
+        <LinearLayout
+            android:id="@+id/btnFilter059"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_search_059"
+            android:background="@drawable/bg_btn_filter_059"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/spacing_12_059"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_filter_059"
+                android:layout_marginEnd="@dimen/spacing_4_059"
+                android:contentDescription="@string/btn_filter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_filter"
+                android:textColor="@color/color_primary_059"
+                android:textSize="@dimen/text_body_059"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Dot indikator aktif -->
+            <View
+                android:id="@+id/dotFilterActive059"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginStart="@dimen/spacing_4_059"
+                android:background="@drawable/bg_avatar_059"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Search Field Pill Penuh (Toggleable) -->
+    <LinearLayout
+        android:id="@+id/layoutSearchPill059"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_search_059"
+        android:background="@drawable/bg_panel_gray_059"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/padding_screen_059"
+        android:layout_marginBottom="@dimen/spacing_8_059"
+        android:paddingHorizontal="@dimen/spacing_16_059"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_search_059"
+            android:layout_marginEnd="@dimen/spacing_8_059"
+            android:contentDescription="@null" />
+
+        <EditText
+            android:id="@+id/etSearch059"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/hint_search"
+            android:textColor="@color/color_text_primary_059"
+            android:textColorHint="@color/color_text_secondary_059"
+            android:textSize="@dimen/text_body_059"
+            android:inputType="text"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <!-- Container List Barang + Empty States -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView059"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/padding_screen_059"
+            android:paddingTop="@dimen/spacing_8_059"
+            android:paddingBottom="@dimen/spacing_24_059"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_row_059" />
+
+        <!-- Empty State: Benar-benar kosong -->
+        <LinearLayout
+            android:id="@+id/layoutEmptyList059"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/padding_screen_059"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_barang"
+                android:textColor="@color/color_text_secondary_059"
+                android:textSize="@dimen/text_body_059"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/spacing_16_059" />
+
+            <Button
+                android:id="@+id/btnEmptyKeTambah059"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_tambah_barang"
+                style="@style/Widget.Inventaris059.Button.Primary" />
+        </LinearLayout>
+
+        <!-- Empty State: Tidak ada hasil filter/cari -->
+        <LinearLayout
+            android:id="@+id/layoutEmptySearch059"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/padding_screen_059"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_search_barang"
+                android:textColor="@color/color_text_secondary_059"
+                android:textSize="@dimen/text_body_059"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/spacing_16_059" />
+
+            <Button
+                android:id="@+id/btnResetFilterEmpty059"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_reset"
+                style="@style/Widget.Inventaris059.Button.Primary" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

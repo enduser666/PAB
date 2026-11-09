@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/color_background_059">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_screen_059">
+
+        <!-- Judul Form (Tampil di Fragment Tambah, disembunyikan di Activity Edit bila ada Toolbar) -->
+        <TextView
+            android:id="@+id/tvJudulForm059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/judul_tambah_barang"
+            android:textColor="@color/color_text_primary_059"
+            android:textSize="@dimen/text_title_large_059"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="@dimen/spacing_16_059" />
+
+        <!-- Area Foto Barang (Rounded 160dp) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardFotoContainer059"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_photo_box_059"
+            app:cardCornerRadius="@dimen/radius_card_059"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/color_divider_purple_059"
+            app:cardBackgroundColor="@color/color_field_fill_059"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="@dimen/spacing_20_059">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Placeholder Kosong: Ikon Kamera + Teks "Tambah Foto" -->
+                <LinearLayout
+                    android:id="@+id/layoutFotoPlaceholder059"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_camera_059"
+                        android:contentDescription="@string/tambah_foto"
+                        android:layout_marginBottom="@dimen/spacing_8_059" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tambah_foto"
+                        android:textColor="@color/color_primary_059"
+                        android:textSize="@dimen/text_body_059"
+                        android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+
+                <!-- Preview Foto Terpilih -->
+                <ImageView
+                    android:id="@+id/ivPreviewFoto059"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:contentDescription="@string/tambah_foto" />
+
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Label Nama Barang * -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_nama_barang"
+            android:textColor="@color/color_text_primary_059"
+            android:textSize="@dimen/text_body_059"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="@dimen/spacing_8_059" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Inventaris059.Field"
+            android:layout_marginBottom="@dimen/spacing_16_059">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNama059"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nama_barang"
+                android:inputType="textCapWords"
+                android:textColor="@color/color_text_primary_059"
+                android:textSize="@dimen/text_body_059" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Label Deskripsi (Opsional) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_deskripsi"
+            android:textColor="@color/color_text_primary_059"
+            android:textSize="@dimen/text_body_059"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="@dimen/spacing_8_059" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Inventaris059.Field"
+            app:counterEnabled="true"
+            app:counterMaxLength="300"
+            android:layout_marginBottom="@dimen/spacing_16_059">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDeskripsi059"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_deskripsi"
+                android:lines="4"
+                android:gravity="top|start"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColor="@color/color_text_primary_059"
+                android:textSize="@dimen/text_body_059" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Label Kategori (Opsional) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_kategori"
+            android:textColor="@color/color_text_primary_059"
+            android:textSize="@dimen/text_body_059"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="@dimen/spacing_8_059" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Inventaris059.Field"
+            android:layout_marginBottom="@dimen/spacing_16_059">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvKategori059"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_kategori"
+                android:inputType="textCapWords"
+                android:completionThreshold="1"
+                android:textColor="@color/color_text_primary_059"
+                android:textSize="@dimen/text_body_059" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Label Jumlah * -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_jumlah"
+            android:textColor="@color/color_text_primary_059"
+            android:textSize="@dimen/text_body_059"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="@dimen/spacing_8_059" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Inventaris059.Field"
+            android:layout_marginBottom="@dimen/spacing_16_059">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etJumlah059"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_jumlah"
+                android:inputType="number"
+                android:textColor="@color/color_text_primary_059"
+                android:textSize="@dimen/text_body_059" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Label Harga * -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_harga"
+            android:textColor="@color/color_text_primary_059"
+            android:textSize="@dimen/text_body_059"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="@dimen/spacing_8_059" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Inventaris059.Field"
+            android:layout_marginBottom="@dimen/spacing_32_059">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHarga059"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_harga"
+                android:inputType="numberDecimal"
+                android:textColor="@color/color_text_primary_059"
+                android:textSize="@dimen/text_body_059" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Tombol Simpan Full-width ungu tua -->
+        <Button
+            android:id="@+id/btnSimpan059"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button_059"
+            android:text="@string/btn_simpan"
+            style="@style/Widget.Inventaris059.Button.Primary"
+            android:layout_marginBottom="@dimen/spacing_16_059" />
+
+        <!-- Tombol Hapus (Hanya muncul saat mode edit di Activity) -->
+        <Button
+            android:id="@+id/btnHapus059"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_hapus_barang"
+            style="@style/Widget.Inventaris059.Button.DestructiveText"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background_059">
+
+    <!-- Top App Bar: background abu #F2F2F2, judul tengah semi-bold, avatar ungu di kanan -->
+    <LinearLayout
+        android:id="@+id/topBar059"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_topbar_059"
+        android:background="@color/color_panel_gray_059"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/padding_screen_059">
+
+        <!-- Placeholder view untuk menyeimbangkan posisi judul di tengah -->
+        <View
+            android:layout_width="@dimen/size_avatar_059"
+            android:layout_height="@dimen/size_avatar_059" />
+
+        <TextView
+            android:id="@+id/tvTopBarTitle059"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nav_beranda"
+            android:textColor="@color/color_text_primary_059"
+            android:textSize="@dimen/text_title_059"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/tvTopBarAvatar059"
+            android:layout_width="@dimen/size_avatar_059"
+            android:layout_height="@dimen/size_avatar_059"
+            android:background="@drawable/bg_avatar_059"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_title_059"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            tools:text="A" />
+    </LinearLayout>
+
+    <!-- Container Fragment (Beranda | Tambah | Barang | Pengaturan) -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer059"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Garis tipis ungu di atas Bottom Nav -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_divider_059"
+        android:background="@color/color_divider_purple_059" />
+
+    <!-- Bottom Navigation 4 Tab -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav059"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Inventaris059.BottomNav"
+        app:menu="@menu/bottom_nav_menu_059" />
+
+</LinearLayout>

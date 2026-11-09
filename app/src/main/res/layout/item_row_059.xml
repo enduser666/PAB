@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Konten Utama Kartu Barang -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/spacing_12_059">
+
+        <!-- Kiri: Kotak rounded 72dp berlatar primary_soft (Foto atau Inisial) -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="@dimen/size_item_thumb_059"
+            android:layout_height="@dimen/size_item_thumb_059"
+            app:cardCornerRadius="@dimen/radius_item_thumb_059"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp"
+            app:cardBackgroundColor="@color/color_primary_soft_059"
+            android:layout_marginEnd="@dimen/spacing_16_059">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Inisial Huruf Pertama (jika tidak ada foto) -->
+                <TextView
+                    android:id="@+id/tvThumbInitial059"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_primary_dark_059"
+                    android:textSize="@dimen/text_display_059"
+                    android:fontFamily="sans-serif-medium"
+                    tools:text="K" />
+
+                <!-- Foto Barang (jika ada foto) -->
+                <ImageView
+                    android:id="@+id/ivThumbFoto059"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:contentDescription="@null" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Kanan: Detail Informasi Barang -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Baris Ringkasan: Stok, Harga, Subtotal -->
+            <TextView
+                android:id="@+id/tvDetailMetrics059"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text_secondary_059"
+                android:textSize="@dimen/text_caption_059"
+                tools:text="Stok: 12  •  Harga: Rp 50.000\nSubtotal: Rp 600.000" />
+
+            <!-- Nama Barang: Semi-bold lebih besar -->
+            <TextView
+                android:id="@+id/tvNama059"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text_primary_059"
+                android:textSize="@dimen/text_title_059"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="@dimen/spacing_4_059"
+                android:layout_marginBottom="2dp"
+                tools:text="Kemeja Oxford Putih" />
+
+            <!-- Baris Kategori (hanya muncul jika ada kategori) -->
+            <TextView
+                android:id="@+id/tvKategoriBadge059"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_primary_059"
+                android:textSize="@dimen/text_caption_059"
+                android:layout_marginBottom="@dimen/spacing_6_059"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="Kategori: Pakaian" />
+
+            <!-- Baris Status Chip Pill + Tombol Bulat Chevron -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Chip Pill Status: Tersedia / Menipis / Habis -->
+                <TextView
+                    android:id="@+id/tvStatusChip059"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_panel_total_059"
+                    android:paddingHorizontal="@dimen/spacing_8_059"
+                    android:paddingVertical="2dp"
+                    android:textColor="@color/color_primary_dark_059"
+                    android:textSize="@dimen/text_caption_059"
+                    android:fontFamily="sans-serif-medium"
+                    tools:text="Tersedia" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <!-- Tombol bulat kecil primary_soft berisi chevron -->
+                <FrameLayout
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/bg_circle_button_059">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_chevron_right_059"
+                        android:contentDescription="@null" />
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Garis Pemisah Tipis antar Item -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_divider_059"
+        android:background="@color/color_divider_purple_059" />
+
+</LinearLayout>

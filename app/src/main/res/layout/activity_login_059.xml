@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary_059"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_screen_059"
+        android:gravity="center_horizontal">
+
+        <!-- Spacer atas -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_48_059" />
+
+        <!-- Judul aplikasi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.Inventaris059.Auth.Title"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_8_059" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kelompok"
+            android:textAppearance="@style/TextAppearance.Inventaris059.Auth.Label"
+            android:layout_marginBottom="@dimen/spacing_48_059" />
+
+        <!-- Label Username -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_username"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_body_059"
+            android:layout_marginBottom="@dimen/spacing_8_059" />
+
+        <!-- Field Username -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Inventaris059.Field.Auth"
+            android:layout_marginBottom="@dimen/spacing_16_059">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsername059"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_username"
+                android:inputType="textNoSuggestions"
+                android:textColor="@color/color_text_primary_059"
+                android:textSize="@dimen/text_body_059" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Label Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_password"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_body_059"
+            android:layout_marginBottom="@dimen/spacing_8_059" />
+
+        <!-- Field Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Inventaris059.Field.Auth"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="@dimen/spacing_32_059"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword059"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textColor="@color/color_text_primary_059"
+                android:textSize="@dimen/text_body_059" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Tombol Masuk -->
+        <Button
+            android:id="@+id/btnLogin059"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button_059"
+            android:text="@string/btn_masuk"
+            style="@style/Widget.Inventaris059.Button.Auth"
+            android:layout_marginBottom="@dimen/spacing_24_059" />
+
+        <!-- Link ke Register -->
+        <TextView
+            android:id="@+id/tvGoRegister059"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_register"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_body_059"
+            android:minHeight="48dp"
+            android:gravity="center"
+            android:padding="@dimen/spacing_8_059" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_48_059" />
+
+    </LinearLayout>
+</ScrollView>

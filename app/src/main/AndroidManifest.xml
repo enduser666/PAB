@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Inventaris059">
+
+        <!-- Entry Point: LoginActivity059 -->
+        <activity
+            android:name=".ui.auth.LoginActivity059"
+            android:exported="true"
+            android:theme="@style/Theme.Inventaris059.Auth"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- RegisterActivity059 -->
+        <activity
+            android:name=".ui.auth.RegisterActivity059"
+            android:theme="@style/Theme.Inventaris059.Auth"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- MainActivity059 (Beranda | Tambah | Barang | Pengaturan) -->
+        <activity
+            android:name=".ui.MainActivity059"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- ItemFormActivity059 (Mode Ubah Barang - Layar penuh tanpa bottom nav) -->
+        <activity
+            android:name=".ui.item.ItemFormActivity059"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- FileProvider untuk pengambilan foto kamera -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider059"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_059" />
+        </provider>
+
+    </application>
+
+</manifest>

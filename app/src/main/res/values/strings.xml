@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inventaris Barang</string>
+    <string name="kelompok">Kelompok 4</string>
+
+    <!-- Navigasi Bottom Nav -->
+    <string name="nav_beranda">Beranda</string>
+    <string name="nav_tambah">Tambah</string>
+    <string name="nav_barang">Barang</string>
+    <string name="nav_pengaturan">Pengaturan</string>
+
+    <!-- Auth -->
+    <string name="judul_login">Inventaris\nBarang</string>
+    <string name="judul_register">Daftar Akun</string>
+    <string name="label_username">Username *</string>
+    <string name="label_password">Password *</string>
+    <string name="label_konfirmasi_password">Konfirmasi Password *</string>
+    <string name="hint_username">Masukkan username</string>
+    <string name="hint_password">Masukkan password</string>
+    <string name="hint_konfirmasi">Ulangi password</string>
+    <string name="btn_masuk">Masuk</string>
+    <string name="btn_daftar">Daftar</string>
+    <string name="go_register">Belum punya akun? <b>Daftar</b></string>
+    <string name="go_login">Sudah punya akun? <b>Masuk</b></string>
+
+    <!-- Beranda -->
+    <string name="sapaan_format">Halo, %1$s</string>
+    <string name="seksi_ringkasan">Ringkasan</string>
+    <string name="label_jenis_barang">JENIS BARANG</string>
+    <string name="label_total_stok">TOTAL STOK</string>
+    <string name="label_stok_menipis">STOK MENIPIS</string>
+    <string name="label_stok_habis">STOK HABIS</string>
+    <string name="label_kategori_stat">KATEGORI</string>
+    <string name="label_total_nilai">Total Nilai Inventaris</string>
+    <string name="seksi_stok_terendah">Stok Terendah</string>
+    <string name="tersisa_format">%1$d tersisa</string>
+    <string name="empty_stok_terendah">Belum ada barang di inventaris.</string>
+    <string name="seksi_ringkasan_kategori">Ringkasan Kategori</string>
+    <string name="jumlah_barang_kategori_format">%1$d barang</string>
+    <string name="empty_kategori">Belum ada kategori barang.</string>
+
+    <!-- Barang (List) -->
+    <string name="hint_search">Cari nama atau kategori…</string>
+    <string name="btn_tambah_barang">+ Tambah Barang</string>
+    <string name="btn_filter">Filter</string>
+    <string name="chip_tersedia">Tersedia</string>
+    <string name="chip_menipis">Menipis</string>
+    <string name="chip_habis">Habis</string>
+    <string name="stok_detail_format">Stok: %1$d</string>
+    <string name="harga_detail_format">Harga: %1$s</string>
+    <string name="subtotal_detail_format">Subtotal: %1$s</string>
+    <string name="kategori_format">Kategori: %1$s</string>
+    <string name="empty_list_barang">Belum ada barang.\nTambahkan barang pertama Anda.</string>
+    <string name="empty_search_barang">Tidak ada barang yang cocok dengan filter atau pencarian.</string>
+
+    <!-- Filter BottomSheet -->
+    <string name="judul_filter">Filter &amp; Urutkan</string>
+    <string name="kategori_status_stok">Status Stok</string>
+    <string name="filter_semua">Semua</string>
+    <string name="kategori_filter_semua">Semua Kategori</string>
+    <string name="kategori_filter_judul">Kategori</string>
+    <string name="kategori_urutkan">Urutkan</string>
+    <string name="sort_nama_asc">Nama (A-Z)</string>
+    <string name="sort_stok_asc">Stok Terendah</string>
+    <string name="sort_harga_desc">Harga Tertinggi</string>
+    <string name="btn_terapkan">Terapkan</string>
+    <string name="btn_reset">Reset</string>
+
+    <!-- Tambah & Edit Form -->
+    <string name="judul_tambah_barang">Tambah Barang</string>
+    <string name="judul_edit_barang">Ubah Barang</string>
+    <string name="tambah_foto">Tambah Foto</string>
+    <string name="ambil_foto">Ambil Foto</string>
+    <string name="pilih_galeri">Pilih dari Galeri</string>
+    <string name="hapus_foto">Hapus Foto</string>
+    <string name="pilih_sumber_foto">Pilih Sumber Foto</string>
+    <string name="label_nama_barang">Nama Barang *</string>
+    <string name="label_deskripsi">Deskripsi</string>
+    <string name="label_kategori">Kategori</string>
+    <string name="label_jumlah">Jumlah *</string>
+    <string name="label_harga">Harga (Rp) *</string>
+    <string name="hint_nama_barang">Nama barang</string>
+    <string name="hint_deskripsi">Tulis deskripsi barang (opsional, maks 300 karakter)</string>
+    <string name="hint_kategori">Ketik atau pilih kategori</string>
+    <string name="hint_jumlah">0</string>
+    <string name="hint_harga">0</string>
+    <string name="btn_simpan">Simpan</string>
+    <string name="btn_hapus_barang">Hapus Barang</string>
+    <string name="msg_barang_ditambahkan">Barang berhasil ditambahkan</string>
+    <string name="msg_barang_diperbarui">Barang berhasil diperbarui</string>
+    <string name="msg_barang_dihapus">Barang berhasil dihapus</string>
+
+    <!-- Pengaturan -->
+    <string name="seksi_pengaturan_akun">Pengaturan Akun</string>
+    <string name="label_profil_username">Nama pengguna*</string>
+    <string name="label_profil_password">Kata sandi*</string>
+    <string name="label_profil_jumlah_barang">Jumlah barang</string>
+    <string name="dummy_password_dots">••••••••</string>
+    <string name="item_count_format">%1$d jenis barang</string>
+    <string name="judul_ubah_profil">Ubah Akun</string>
+    <string name="hint_password_baru">Biarkan kosong jika tidak diubah</string>
+    <string name="msg_profil_diperbarui">Akun berhasil diperbarui</string>
+    <string name="btn_logout">Keluar</string>
+
+    <!-- Dialog Konfirmasi -->
+    <string name="hapus_konfirmasi_judul">Hapus Barang</string>
+    <string name="hapus_konfirmasi_pesan">Barang ini akan dihapus secara permanen beserta fotonya. Lanjutkan?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
+    <string name="logout_konfirmasi_judul">Konfirmasi Keluar</string>
+    <string name="logout_konfirmasi_pesan">Yakin ingin keluar dari akun ini?</string>
+    <string name="keluar">Keluar</string>
+</resources>
